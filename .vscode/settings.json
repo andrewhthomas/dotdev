@@ -1,12 +1,17 @@
 {
-  "prettier.documentSelectors": ["**/*.astro"],
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[astro]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "css.customData": ["./vscode.tailwind.json"],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "astro", // Enable .astro
+    "typescript", // Enable .ts
+    "typescriptreact" // Enable .tsx
+  ],
+  "files.associations": {
+    "*.mdx": "markdown"
   },
-  "[javascript]": {
-    "editor.formatOnSave": true,
+  "prettier.documentSelectors": ["**/*.astro"],
+  "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
